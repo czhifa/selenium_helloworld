@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'OpTest'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.seleniumhq.selenium:selenium-server:2.44.0'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.4.0'
+    compile 'org.testng:testng:6.1.1'
+    // https://mvnrepository.com/artifact/info.cukes/cucumber-testng
+    compile group: 'info.cukes', name: 'cucumber-testng', version: '1.2.5'
+    // https://mvnrepository.com/artifact/info.cukes/cucumber-java
+    compile group: 'info.cukes', name: 'cucumber-java', version: '1.2.5'
+    //Apache POI
+    compile 'org.apache.poi:poi-ooxml:3.17'
+    //Log4j
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+    //TestNG
+    compile "org.testng:testng:6.3.1"
+    compile "org.uncommons:reportng:1.1.2"
+}
